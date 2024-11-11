@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+$bg-color: #121212;
+$text-color: #ecf0f1;
+$main-color: #1abc9c;
+$second-color: gray;
+$other-color: #1f1f1f;
+$h1-font: 5.2rem;
+$h2-font: 3.5rem;
+$p-font: 1.1rem;
+
+body {
+    background: $bg-color;
+    color: $text-color;
+}
+
+span {
+    color: $main-color;
+}

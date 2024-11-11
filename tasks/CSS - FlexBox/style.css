@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    height: 200vw;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header
+{
+    display: flex;
+    overflow: hidden;
+    height: 5vw;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+}
+
+.header a{
+    color: white;
+    margin: 50px;
+}
+
+.header a:first-child:hover{
+    color: rgb(255, 0, 0);
+}
+
+.header a:hover{
+    color: rgb(223, 113, 11);
+}
+
+/*********BOXES*********/
+
+.main {
+    padding-top: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.main-heading {
+    font-size: 60px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 2000px) {
+    .main-heading {
+        font-size: 80px;
+        color: red;
+    }
+}
+
+.blocks-row {
+    width: calc(100% + 20px);
+    margin-left: -20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: calc(25% - 20px);
+    margin-top: 20px;
+    margin-left: 20px;
+    background: #000000;
+    height: 125px;
+    flex-shrink: 0;
+    color: white;
+}
+
+.block p {
+    margin: auto;
+}
+
+@media only screen and (max-width: 1366px) {
+    .block {
+        width: calc(33.333% - 20px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .block {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .block {
+        width: 100%;
+    }
+}

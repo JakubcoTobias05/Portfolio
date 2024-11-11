@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulačka</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="box">
+                <label for="num1">Čislo 1:</label>
+                <input type="number" name="num1" id="num1" checked>
+            </div>
+            <div class="box">
+                <label for="num2">Číslo 2:</label>
+                <input type="number" name="num2" id="num2" checked>
+            </div>
+            <div class="box">
+                <label for="op">Operace:</label>
+                <select name="op" id="op">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <button type="button" id="btn">Vypočítat</button>
+            </div>
+            <div class="box">
+                <label for="result">Výsledek:</label>
+                <div id="result"></div>
+            </div>
+        </div>
+    </main>
+    <script src="js/calc.js"></script>
+</body>
+</html>

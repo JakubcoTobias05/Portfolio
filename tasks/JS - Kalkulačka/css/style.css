@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+:root
+{
+    --text-color: #70e7ff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a3d; 
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 5px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); 
+    background-color: #232357; 
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+label {
+    font-size: 1.2em;
+    color: var(--text-color);
+    margin: 4px;
+}
+
+input[type="number"], select, #btn {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333366;
+    color: var(--text-color);
+}
+
+input[type="number"]:focus, select:focus, #btn:focus {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6); 
+}
+
+select {
+    width: 100%;
+}
+
+#btn {
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+}
+
+.btn:hover {
+    background-color: #45458a; 
+}
+
+#result {
+    font-size: 1.5em;
+    color: #ff00fc;
+    margin-top: 10px;
+    text-align: center;
+    margin: 5px;
+}

@@ -1,0 +1,122 @@
+.inner {
+    padding-top: 20px;
+}
+
+.Tech_header {
+    text-align: center;
+    color: $text-color;
+    padding: 1rem;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 100px;
+        background-color: $main-color;
+        border-radius: 2px;
+    }
+}
+
+.Tcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+
+    @media screen and (max-width: 990px) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+
+    @media screen and (max-width: 650px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.skill-box {
+    padding: 1rem;
+    color: $second-color;
+    cursor: pointer;
+
+    &:hover {
+        .skill-title::after, .skill-title::before {
+            width: 35px;
+        }
+
+        .tech_img {
+            transform: translateY(-10px);
+        }
+    }
+
+    .skill-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        position: relative;
+
+        &::after, &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $main-color;
+            transition: 0.5s;
+        }
+
+        &::after {
+            right: 50%;
+            border-radius: 2px 0 0 2px;
+        }
+
+        &::before {
+            left: 50%;
+            border-radius: 0 2px 2px 0;
+        }
+
+        h3 {
+            color: $text-color;
+            margin-top: 0.5rem;
+        }
+    }
+
+    .tech_img {
+        width: 90px;
+        height: 90px;
+        position: relative;
+        border-radius: 45px;
+        background-color: $text-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 90px;
+            background: rgba(100, 100, 100, 0.5);
+            border-radius: 45px 0 0 45px;
+        }
+    }
+
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+    }
+}

@@ -1,0 +1,49 @@
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+    .about-text {
+        h4 {
+            margin: 10px 0;
+            color: $main-color;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: $h2-font;
+        }
+
+        p {
+            color: $second-color;
+            font-size: $p-font;
+            line-height: 30px;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .about-gri {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .about-in {
+        h5 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+
+    .about-img img {
+        height: auto;
+        width: 100%;
+        max-width: 350px;
+        border-radius: 5px;
+        margin-top: 60px;
+    }
+}

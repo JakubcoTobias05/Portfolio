@@ -1,0 +1,46 @@
+.experience-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.box {
+    padding: 45px;
+    background: $other-color;
+    border-top: 5px solid transparent;
+    border-radius: 0.5rem;
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+    h3 {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 15px 0;
+        transition: all 0.4s ease;
+    }
+
+    p {
+        color: $second-color;
+        font-size: $p-font;
+        line-height: 30px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &:hover {
+        transform: scale(1.01) translateY(-5px);
+        border-top: 5px solid $main-color;
+
+        h3 {
+            color: $main-color;
+        }
+    }
+}
