@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Validation web</title>
+</head>
+<body>
+    <main>
+        <section class="form-content" id="form-content">
+            <div class="container">
+                <form id="contactForm">
+                    <label for="firstName">Jméno:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    
+                    <label for="lastName">Příjmení:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="address">Adresa:</label>
+                    <input type="text" id="address" name="address" required>
+                    
+                    <label for="city">Město:</label>
+                    <input type="text" id="city" name="city" required>
+                    
+                    <label for="message">Zpráva:</label>
+                    <textarea id="message" name="message" maxlength="255" required></textarea>
+                    
+                    <button type="submit">Odeslat</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <div id="alertContainer"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
