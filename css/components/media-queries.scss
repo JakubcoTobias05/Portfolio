@@ -15,7 +15,7 @@
 @media (max-width: 970px) {
     :root {
         --h1-font: 4.2rem;
-        --h2-font: 2.9rem;
+        --h2-font: 3.7rem;
         --p-font: 1rem;
     }
 
@@ -73,5 +73,9 @@
     .skill-item img {
         height: 90%;
         width: 90%;
+    }
+
+    :root {
+        --h1-font: 2.7rem;
     }
 }
