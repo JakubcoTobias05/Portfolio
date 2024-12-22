@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+:root {
+    --bg-color: black;
+    --text-color: #ecf0f1;
+    --main-color: #039bc9;
+    --second-color: rgb(66, 66, 66);
+    --other-color: #1f96b2;
+  }
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/bg3.png');
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
