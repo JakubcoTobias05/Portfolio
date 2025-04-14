@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(53, 52, 52);
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 120vh;
+
+}
+
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 8px;
+  margin: 5px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #3b1919;
+}
+
+#customers table {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
+}
+
+#customers td {
+  text-align: left;
+  vertical-align: middle;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insert-form {
+  width: 300px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border: 2px dotted black;
+}
+
+.insert-form input, .insert-form button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form, .Search-bar {
+  text-align: center;
+}
+
+form input, form button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: rgb(196, 193, 193);
+}
+
+.user-container {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+  padding: 15px;
+  color: white;
+  background-color: #3b1919;
+  margin: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+a:hover 
+{
+  background-color: #703333;
+}
+
+p {
+  margin-top: 20px;
+}
+
+.center{ 
+  display: flex;
+  margin-top: 10px;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+}

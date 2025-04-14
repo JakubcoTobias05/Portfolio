@@ -1,0 +1,64 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #customers tr:hover {
+    background-color: #ddd;
+  }
+  
+  #customers table {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+  }
+  
+  #customers td {
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .insert-form{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border: 2px dotted black;
+  }
+
+  .insert-form input, button{
+    margin-top: 10px;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+  }
+
+ form, .Search-bar{
+  text-align: center;
+ }
