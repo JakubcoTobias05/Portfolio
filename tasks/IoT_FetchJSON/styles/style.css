@@ -1,0 +1,117 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --background: #677f97;
+    --card-bg: #ffffff;
+    --light-gray: #ecf0f1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: url(../assets/images/bg02.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: var(--primary);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 4px solid var(--secondary);
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.data-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+    border-left: 4px solid var(--secondary);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.data-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.chart-section {
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffffff, var(--light-gray));
+    margin: 20px 0;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.chart-header {
+    padding: 15px 20px;
+    background: var(--secondary);
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.chart-body {
+    padding: 20px;
+}
+
+.chart {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .data-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .chart {
+        height: 300px;
+        padding: 10px;
+    }
+    
+    .chart-header {
+        font-size: 1.2em;
+        padding: 10px 15px;
+    }
+    
+    .chart-body {
+        padding: 10px;
+    }
+}
